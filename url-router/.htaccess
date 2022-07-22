@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond ${SERIPT_FILENAME} !-f
+RewriteCond ${SERIPT_FILENAME} !-d
+RewriteCond ${SERIPT_FILENAME} !-l
+RewriteRoule ^(.*)$ index.php/$1
